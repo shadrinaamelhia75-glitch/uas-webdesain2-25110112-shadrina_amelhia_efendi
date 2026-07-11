@@ -1,9 +1,10 @@
 body {
- background-color: #92acf3;
+ background-color: white;
 }
 .hero {
     text-align: center;
-    padding: 100px 0;
+    padding: 50px 0;
+    background-color: #92acf3;
 
 }
 .hero h1 {
