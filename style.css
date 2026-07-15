@@ -1,11 +1,203 @@
 body {
  background-color: white;
+  font-family: 'Poppins', sans-serif;
 }
+html{
+    scroll-behavior:smooth;
+}
+.navbar{
+    color:white;
+}
+
+.footer p{
+    margin:0;
+}
+    
+.navbar{
+    background-color: #802531;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand{
+    font-size: 25px;
+    font-weight: bold;
+    font-family:'Playfair Display', serif;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.nav-link{
+    color: white !important;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover{
+    color: #E7D7C4 !important;
+}
+.logo{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.hero h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.2;
+    text-shadow: 2px 2px 10px rgba(0,0,0,.35);
+}
+
+.hero p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}      
 .hero {
     text-align: center;
-    padding: 50px 0;
-    background-color: #92acf3;
+    padding: 80px 0;
+    background-image: url("img/btk1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
+}
+.hero .btn-primary{
+    background-color: #6277d1;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.menu{
+    color: #6277d1;
+    background-color:white;
+}
+.slide-placeholder{
+    min-height: 280px;
+    padding: 35px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-img{
+    width: 100%;
+    max-width: 260px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    width: 6%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color: rgba(0,0,0,.45);
+    border-radius: 50%;
+    padding: 18px;
+}
+
+.carousel-indicators li{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.about img{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    
+}
+.about{
+    position: relative;
+    background-image: url("img/btk1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+}
+
+.about::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.45);
+}
+
+.about .container{
+    position: relative;
+    z-index: 2;
+}
+
+.about img:hover{
+    transform: scale(1.03);
+}
+
+.about-box{
+    background: rgba(255,255,255,0.85);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
+
+.about-box h4,
+.about-box h5{
+    color:#6277d1;
+}
+
+.about-box p,
+.about-box li{
+    color:#333;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.about h2{
+    color:white;
+    text-shadow:2px 2px 8px black;
+}
+
+.about > .container > .text-center > p{
+    color: #9ad2f3;
+    text-shadow:2px 2px 5px black;
+}
+.about .brand-text{
+    animation: zoomIn 1s ease;
+    color: #9ad2f3;
+    font-size: 50px;
+    font-family:'Playfair Display', serif;
+    text-shadow:
+        0 3px 8px rgba(0,0,0,.35),
+        0 0 15px rgba(255,215,0,.4);
+        
+}
+
+@keyframes zoomIn{
+    from{
+        opacity:0;
+        transform:scale(.8);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
 }
 .hero h1 {
     color: white;
@@ -17,10 +209,182 @@ body {
     font-size: 20px;
     margin: 20px 0;
 }
+.hero{
+    position: relative;
+    background: url("img/btk1.png");
+    padding: 140px 0;
+    overflow: hidden;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.hero .container{
+    position:relative;
+    z-index:2;
+}
+.hero-title{
+    margin-bottom:25px;
+    line-height:1.2;
+}
+
+.hero-title .welcome-text{
+    display:block;
+    font-family:'Poppins', sans-serif;
+    font-size:24px;
+    font-weight:500;
+    color:#ffffff;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.hero-title .brand-text{
+    display:block;
+    font-family:'Playfair Display', serif;
+    font-size:72px;
+    font-weight:800;
+    color:#9ad2f3;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    text-shadow:
+        0 3px 8px rgba(0,0,0,.35),
+        0 0 15px rgba(255,215,0,.4);
+}
+
+.hero-title .brand-text{
+    animation: zoomIn 1s ease;
+}
+@keyframes zoomIn{
+    from{
+        opacity:0;
+        transform:scale(.8);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+.hero-section {
+    background: linear-gradient(135deg, var(--navy)0%, #1e3f6e 100%);
+    padding: 100px 0 70px;
+}
+.produk .card{
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.produk .card:hover{
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 18px 35px rgba(0,0,0,.25);
+}
+
+.produk .card img{
+    height: 260px;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.produk .card:hover img{
+    transform: scale(1.1);
+}
+
+.produk .card-body{
+    text-align: center;
+    transition: .4s;
+}
+
+.produk .card-title{
+    font-weight: 700;
+    color: #3d2b1f;
+}
+
+.produk .card-text{
+    font-size: 22px;
+    color: #6277d1;
+    font-weight: bold;
+}
+
+.produk .card:hover .card-title{
+    color: #6277d1;
+}
+.produk-card{
+    opacity:0;
+    transform:translateY(50px);
+    transition:all .8s ease;
+}
+
+.produk-card.show{
+    opacity:1;
+    transform:translateY(0);
+}
 .navbar {
     background-color: #6277d1;
 }
 .img {
     max-width: 100%;
     height: auto;
+}
+.kontak{
+    background:white;
+    color: #6277d1;
+}
+
+#kontak .card{
+    border:none;
+    border-radius:15px;
+}
+
+#kontak iframe{
+    border-radius:10px;
+}
+
+#kontak h4{
+    font-weight:bold;
+    color: white;
+}
+.row{
+    color: #6277d1;
+}
+.footer{
+    background-color: #6277d1;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.page-view {display: none;}
+.page-view.active {display: block; animation: fadedup .3s ease;}
+
+@keyframes fadedup {
+    from {opacity: 0; transform: translateY(10px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+.page-view{
+    display:none;
+}
+
+.page-view.active{
+    display:block;
+    animation: fadeIn .5s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.page-view.active .produk-card{
+    opacity:1;
+    transform:translateY(0);
 }
