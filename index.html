@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
 
@@ -50,19 +50,17 @@
 
 
 <div id="page-home" class="page-view active">
-
-    <section class="hero py-10 bg-light">
-            <div class="container">
-                <h1 class="hero-title">
-                    <span class="welcome-text" style="font-family: 'Poppins', sans-serif;">Selamat Datang di</span>
-                    <span class="brand-text">MANARI PEKANBARU</span>
-                </h1>
-                <p>Tempat terbaik untuk menikmati berbagai produk berkualitasdengan pelayanan yang ramah dan profesional.</p>
-                <a href="#" class="btn btn-primary nav-link-page" data-page="produk">Lihat Produk</a>
-            </div>
+    <section class="hero py-10 bg-light reveal">
+        <div class="container">
+            <h1 class="hero-title">
+                <span class="welcome-text">Selamat Datang di</span>
+                <span class="brand-text">MANARI PEKANBARU</span>
+            </h1>
+            <p>Tempat terbaik untuk menikmati berbagai produk berkualitas dengan pelayanan yang ramah dan profesional.</p>
+            <a href="#" class="btn btn-primary nav-link-page" data-page="produk">Lihat Produk</a>
+        </div>
     </section>
-
-    <section class="py-5 bg-light">
+    <section class="py-5 bg-light reveal">
     <div class="container">
 
         <p class="text-uppercase font-weight-bold small mb-1"
@@ -83,8 +81,6 @@
             </ol>
 
             <div class="carousel-inner rounded">
-
-                <!-- Slide 1 -->
                 <div class="carousel-item active">
                     <div class="slide-placeholder"
                         style="background:linear-gradient(120deg,#476392,#96bff2);">
@@ -92,7 +88,7 @@
                         <div class="row align-items-center">
 
                             <div class="col-md-5 text-center">
-                                <img src="img/manari1.jpeg"
+                                <img src="img/jenis.jpeg"
                                      class="carousel-img"
                                      alt="Manari">
                             </div>
@@ -116,7 +112,6 @@
                     </div>
                 </div>
 
-                <!-- Slide 2 -->
                 <div class="carousel-item">
                     <div class="slide-placeholder"
                         style="background:linear-gradient(120deg,#5bd8bd,#469194);">
@@ -124,22 +119,20 @@
                         <div class="row align-items-center">
 
                             <div class="col-md-5 text-center">
-                                <img src="img/promo.jpeg"
+                                <img src="img/lummer.jpeg"
                                      class="carousel-img"
                                      alt="Promo">
                             </div>
 
                             <div class="col-md-7 text-white">
-                                <span class="badge badge-light mb-2">Promo</span>
+                                <span class="badge badge-light mb-2">Best Seller</span>
 
                                 <h4 class="font-weight-bold">
-                                    Diskon Produk Pilihan
+                                    Makanan Ter-Best
                                 </h4>
 
                                 <p class="mb-0">
-                                    Nikmati berbagai promo menarik dan
-                                    potongan harga untuk produk pilihan
-                                    Manari Pekanbaru.
+                                    Nikmati berbagai pilihan makanan favorit dan paling diminati dari Manari Pekanbaru.
                                 </p>
                             </div>
 
@@ -148,7 +141,6 @@
                     </div>
                 </div>
 
-                <!-- Slide 3 -->
                 <div class="carousel-item">
                     <div class="slide-placeholder"
                         style="background:linear-gradient(120deg,#7371f1,#385194);">
@@ -156,7 +148,7 @@
                         <div class="row align-items-center">
 
                             <div class="col-md-5 text-center">
-                                <img src="img/pelayanan.jpeg"
+                                <img src="img/palayanan.jpeg"
                                      class="carousel-img"
                                      alt="Pelayanan">
                             </div>
@@ -196,48 +188,161 @@
 </div>
 
 <div id="page-produk" class="page-view">
-   <section class="produk py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center mb-5">Produk Kami</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="img/cake.jpeg" class="card-img-top" alt="Produk 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Cake Pisang Zaman Doloe</h5>
-                                <p class="card-text">32.000</p>
+    <section class="produk py-5 reveal">
+        <div class="container py-4">
+            
+            <div class="text-center mb-5">
+                <p class="subjudul-produk-sky mb-2">Menu Rekomendasi</p>
+                <h2 class="judul-produk-sky">Produk Kami</h2>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-produk-sky border-0 reveal">
+                        <div class="img-container-sky">
+                            <img src="img/cake.jpeg" alt="Cake Pisang Zaman Doloe">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="nama-produk mb-2" style="min-height: 48px;">Cake Pisang Zaman Doloe</h5>
+                                <p class="harga-produk-sky mb-4">Rp 32.000</p>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button type="button" class="btn btn-pesan-sky" data-toggle="modal" data-target="#modalPesanan" data-mode="pesan" data-produk="Cake Pisang Zaman Doloe" data-harga="Rp 32.000" data-img="img/cake.jpeg">
+                                    <i class="bi bi-bag-heart-fill"></i> Pesan Sekarang
+                                </button>
+                                <button type="button" class="btn btn-keranjang-sky" data-toggle="modal" data-target="#modalPesanan" data-mode="keranjang" data-produk="Cake Pisang Zaman Doloe" data-harga="Rp 32.000" data-img="img/cake.jpeg">
+                                    <i class="bi bi-basket3-fill"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="img/durian.jpeg" class="card-img-top" alt="Produk 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Talam Durian</h5>
-                                <p class="card-text">25.000</p>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-produk-sky border-0 reveal">
+                        <div class="img-container-sky">
+                            <img src="img/durian.jpeg" alt="Talam Durian">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="nama-produk mb-2" style="min-height: 48px;">Talam Durian</h5>
+                                <p class="harga-produk-sky mb-4">Rp 35.000</p>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button type="button" class="btn btn-pesan-sky" data-toggle="modal" data-target="#modalPesanan" data-mode="pesan" data-produk="Talam Durian" data-harga="Rp 35.000" data-img="img/durian.jpeg">
+                                    <i class="bi bi-bag-heart-fill"></i> Pesan Sekarang
+                                </button>
+                                <button type="button" class="btn btn-keranjang-sky" data-toggle="modal" data-target="#modalPesanan" data-mode="keranjang" data-produk="Talam Durian" data-harga="Rp 35.000" data-img="img/durian.jpeg">
+                                    <i class="bi bi-basket3-fill"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="img/lulu.jpeg" class="card-img-top" alt="Produk 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Brownies By Luluna</h5>
-                                <p class="card-text">50.000</p>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-produk-sky border-0 reveal">
+                        <div class="img-container-sky">
+                            <img src="img/lulu.jpeg" alt="Brownies By Luluna">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="nama-produk mb-2" style="min-height: 48px;">Brownies By Luluna</h5>
+                                <p class="harga-produk-sky mb-4">Rp 45.000</p>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button type="button" class="btn btn-pesan-sky" data-toggle="modal" data-target="#modalPesanan" data-mode="pesan" data-produk="Brownies By Luluna" data-harga="Rp 45.000" data-img="img/lulu.jpeg">
+                                    <i class="bi bi-bag-heart-fill"></i> Pesan Sekarang
+                                </button>
+                                <button type="button" class="btn btn-keranjang-sky" data-toggle="modal" data-target="#modalPesanan" data-mode="keranjang" data-produk="Brownies By Luluna" data-harga="Rp 45.000" data-img="img/lulu.jpeg">
+                                    <i class="bi bi-basket3-fill"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="container py-4">
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-produk-sky border-0 reveal">
+                        <div class="img-container-sky">
+                            <img src="img/nenas.jpeg" alt="Lekker Nenas">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="nama-produk mb-2" style="min-height: 48px;">Lekker Nenas</h5>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button type="button" class="btn btn-pesan-sky" data-toggle="modal" data-target="#modalPesanan" data-mode="pesan" data-produk="Lekker Nenas" data-harga="" data-img="img/nenas.jpeg">
+                                    <i class="bi bi-bag-heart-fill"></i> Pesan Sekarang
+                                </button>
+                                <button type="button" class="btn btn-keranjang-sky" data-toggle="modal" data-target="#modalPesanan" data-mode="keranjang" data-produk="Lekker Nenas" data-harga="" data-img="img/nenas.jpeg">
+                                    <i class="bi bi-basket3-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-produk-sky border-0 reveal">
+                        <div class="img-container-sky">
+                            <img src="img/bolu.jpeg" alt="Bolu Kemoj">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="nama-produk mb-2" style="min-height: 48px;">Bolu Kemoj</h5>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button type="button" class="btn btn-pesan-sky" data-toggle="modal" data-target="#modalPesanan" data-mode="pesan" data-produk="Bolu Kemoj" data-harga="" data-img="img/bolu.jpeg">
+                                    <i class="bi bi-bag-heart-fill"></i> Pesan Sekarang
+                                </button>
+                                <button type="button" class="btn btn-keranjang-sky" data-toggle="modal" data-target="#modalPesanan" data-mode="keranjang" data-produk="Bolu Kemoj" data-harga="" data-img="img/bolu.jpeg">
+                                    <i class="bi bi-basket3-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card card-produk-sky border-0 reveal">
+                        <div class="img-container-sky">
+                            <img src="img/pie.jpeg" alt="Pie Kacang Gurih">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <h5 class="nama-produk mb-2" style="min-height: 48px;">Pie Kacang Gurih</h5>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <button type="button" class="btn btn-pesan-sky" data-toggle="modal" data-target="#modalPesanan" data-mode="pesan" data-produk="Pie Kacang Gurih" data-harga="" data-img="img/pie.jpeg">
+                                    <i class="bi bi-bag-heart-fill"></i> Pesan Sekarang
+                                </button>
+                                <button type="button" class="btn btn-keranjang-sky" data-toggle="modal" data-target="#modalPesanan" data-mode="keranjang" data-produk="Pie Kacang Gurih" data-harga="" data-img="img/pie.jpeg">
+                                    <i class="bi bi-basket3-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             </div>
+
+        </div>
     </section>
- </div>
+</div>
  
 <div id="page-about" class="page-view">         
-<section class="about py-5">
+<section class="about py-5 reveal">
     <div class="container">
             <div class="text-center mb-5">
                 <h2 class="brand-text">Tentang Manari Pekanbaru</h2>
-                <p style="font-size: 20px;">Mengenal lebih dekat pusat oleh-oleh khas Pekanbaru.</p>
+                <p style="font-size: 25px;">Mengenal lebih dekat pusat oleh-oleh khas Pekanbaru.</p>
             </div>
 
         <div class="row align-items-center">
@@ -247,7 +352,7 @@
 
             <div class="col-md-6">
 
-                <div class="about-box">
+                <div class="about-box reveal">
                         <h4 class="font-weight-bold mb-3"> Siapa Kami?</h4>
                         <p> Manari Pekanbaru merupakan pusat oleh-oleh yang menyediakan
                             berbagai makanan khas Riau dan produk pilihan berkualitas.
@@ -257,7 +362,7 @@
                         </p>
                 </div>
 
-                <div class="row mt-4 about-box">
+                <div class="row mt-4 about-box reveal">
                     <div class="col-6">
                         <h5 class="font-weight-bold">Visi</h5>
                             <p> Menjadi pusat oleh-oleh khas Riau yang terpercaya, berkualitas, dan menjadi pilihan utama masyarakat.</p>
@@ -278,37 +383,79 @@
 </section>
 </div> 
 
- <div id="page-kontak" class="page-view">
-<section class="kontak py-5">
-    <div class="container">
-        <div class="text-center mb-5">
-            <h2 class="font-weight-bold">Hubungi Kami</h2>
-            <p class="text-muted">Kunjungi Manari Pekanbaru untuk mendapatkan oleh-oleh khas Riau terbaik.</p>
-        </div>
+<div id="page-kontak" class="page-view">
+    <section id="kontak" class="py-5 reveal">
+        <div class="container py-4">
+            
+            <div class="text-center mb-5 position-relative" style="z-index: 3;">
+                <p class="section-subtitle-sky mb-2">Lokasi & Kontak Resmi</p>
+                <h2 class="judul-kontak-sky mb-3">Hubungi Manari Pekanbaru</h2>
+                <p class="mx-auto mb-4 text-secondary" style="max-width: 550px; font-size: 0.95rem; color: #334155 !important;">
+                    Kami siap melayani kebutuhan oleh-oleh khas Riau terbaik untuk Anda. Silakan hubungi kami atau langsung kunjungi gerai fisik kami.
+                </p>
+                <a href="https://wa.me/628216457581" target="_blank" class="btn btn-sky-action d-inline-flex align-items-center gap-2">
+                    <i class="bi bi-whatsapp fs-5"></i> Hubungi Kami via WhatsApp
+                </a>
+            </div>
 
-    <div class="row">
+            <div class="row g-4 position-relative" style="z-index: 2;">
 
-        <div class="col-md-4">
-            <div class="card shadow">
-                 <div class="card-body">
-                    <h4>Informasi</h4><hr>
-                    <p>📍 Manari Pekanbaru</p>
-                    <p>📞 +628216457581</p>
-                    <p>📧 manari_pku</p>
-                    <p>🕗 07.00 - 22.00 WIB</p>
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-card-sky reveal">
+                        <div class="icon-box-sky"><i class="bi bi-geo-alt-fill"></i></div>
+                        <h6 class="fw-bold mb-2" style="color: #0c4a6e;">Alamat Toko</h6>
+                        <p class="small mb-0 text-secondary" style="color: #475569 !important;">Jl. Soekarno Hatta, Pekanbaru, Riau</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-card-sky reveal">
+                        <div class="icon-box-sky"><i class="bi bi-telephone-fill"></i></div>
+                        <h6 class="fw-bold mb-2" style="color: #0c4a6e;">Telepon / WA</h6>
+                        <p class="mb-0 small">
+                            <a href="https://wa.me/628216457581" target="_blank" class="text-decoration-none link-sky fw-semibold">+62 821-6457-581</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-card-sky reveal">
+                        <div class="icon-box-sky"><i class="bi bi-instagram"></i></div>
+                        <h6 class="fw-bold mb-2" style="color: #0c4a6e;">Media Sosial</h6>
+                        <p class="mb-0 small">
+                            <a href="https://instagram.com/manari_pku" target="_blank" class="text-decoration-none link-sky fw-semibold">@manari_pku</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="info-card-sky reveal">
+                        <div class="icon-box-sky"><i class="bi bi-clock-fill"></i></div>
+                        <h6 class="fw-bold mb-2" style="color: #0c4a6e;">Jam Operasional</h6>
+                        <p class="small mb-0 text-secondary" style="color: #475569 !important;">Setiap Hari (07.00 - 22.00 WIB)</p>
+                    </div>
                 </div>
             </div>
-        </div>
-            <div class="col-md-8">
-                <div class="card shadow">
-                    <div class="card-body p-2">
-                        <iframe src="https://www.google.com/maps?q=Manari+Pekanbaru&output=embed"width="100%"height="350"style="border:0;"allowfullscreen=""loading="lazy"></iframe>
-                    </div>z
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="map-holder-sky">
+                        <div style="height: 420px; width: 100%;">
+                            <iframe 
+                                src="https://www.google.com/maps?q=Manari+Pekanbaru&output=embed" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0; width:100%; height:100%;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
-    </div>
-</section>
+    </section>
 </div>
 
 <footer class="footer text-center py-3">
@@ -317,13 +464,100 @@
     </div>
 </footer>
 
+<button type="button" id="btnBukaKeranjang" class="fab-keranjang-sky" title="Lihat Keranjang">
+    <i class="bi bi-basket3-fill"></i>
+    <span id="badgeKeranjang" class="badge-keranjang-sky" style="display:none;">0</span>
+</button>
+
+<div class="modal fade" id="modalPesanan" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content nota-card">
+            <div class="nota-perforasi nota-perforasi-top"></div>
+            <div class="modal-body nota-body">
+                <button type="button" class="nota-close" data-dismiss="modal" aria-label="Tutup">&times;</button>
+
+                <p class="nota-eyebrow"><span id="notaEyebrowText">Manari Pekanbaru &mdash; Nota Pesanan</span></p>
+
+                <div class="nota-produk-info">
+                    <img id="notaProdukImg" src="" alt="" class="nota-produk-img">
+                    <div>
+                        <h5 id="notaProdukNama" class="nota-produk-nama mb-0"></h5>
+                        <span id="notaProdukHarga" class="nota-produk-harga"></span>
+                    </div>
+                </div>
+
+                <input type="hidden" id="editIndex" value="-1">
+
+                <div class="nota-field">
+                    <label for="inputNamaPelanggan">Nama Pelanggan</label>
+                    <input type="text" id="inputNamaPelanggan" class="nota-input" placeholder="Tulis nama Anda...">
+                </div>
+
+                <div class="nota-field">
+                    <label>Jumlah Pesanan</label>
+                    <div class="nota-stepper">
+                        <button type="button" class="nota-stepper-btn" id="btnKurang">&minus;</button>
+                        <span id="jumlahPesanan" class="nota-stepper-value">1</span>
+                        <button type="button" class="nota-stepper-btn" id="btnTambah">&plus;</button>
+                    </div>
+                </div>
+
+                <div class="nota-field">
+                    <label>Metode Pembayaran</label>
+                    <div class="nota-metode-group" id="metodePembayaranGroup">
+                        <button type="button" class="nota-metode-chip" data-metode="Cash">
+                            <i class="bi bi-cash-coin"></i> Cash
+                        </button>
+                        <button type="button" class="nota-metode-chip" data-metode="DANA">
+                            <i class="bi bi-wallet2"></i> DANA
+                        </button>
+                        <button type="button" class="nota-metode-chip" data-metode="Bank">
+                            <i class="bi bi-bank"></i> Bank
+                        </button>
+                    </div>
+                </div>
+
+                <div class="nota-field">
+                    <label for="inputCatatan">Catatan</label>
+                    <textarea id="inputCatatan" class="nota-input nota-textarea" rows="2" placeholder="cth: kirim jam 5 sore, kurangi manis, dll (opsional)"></textarea>
+                </div>
+
+                <div class="nota-actions">
+                    <button type="button" id="btnSimpanKeranjang" class="btn-nota-utama">
+                        <i class="bi bi-basket3-fill"></i> Tambah Keranjang
+                    </button>
+                </div>
+            </div>
+            <div class="nota-perforasi nota-perforasi-bottom"></div>
+        </div>
+    </div>
+</div>
+
+<div id="panelKeranjang" class="panel-keranjang-sky">
+    <div class="panel-keranjang-header">
+        <h5><i class="bi bi-basket3-fill"></i> Keranjang Pesanan</h5>
+        <button type="button" id="btnTutupKeranjang" class="panel-keranjang-close">&times;</button>
+    </div>
+    <div id="listKeranjang" class="panel-keranjang-list">
+        <p class="keranjang-kosong-text">Keranjang masih kosong. Yuk pilih oleh-oleh favoritmu!</p>
+    </div>
+    <div class="panel-keranjang-footer">
+        <button type="button" id="btnCheckout" class="btn-nota-utama w-100">
+            <i class="bi bi-check2-circle"></i> Checkout
+        </button>
+    </div>
+</div>
+<div id="overlayKeranjang" class="overlay-keranjang-sky"></div>
+
+<div id="toastNotifSky" class="toast-notif-sky">
+    <i class="bi bi-check-circle-fill"></i>
+    <span id="toastNotifText">Berhasil ditambahkan ke keranjang!</span>
+</div>
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-
 <script src="bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
-
 <script src="script.js"></script>
 
 </body>
